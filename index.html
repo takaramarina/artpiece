@@ -19,54 +19,79 @@
         text-align: right;
         font-variant: small-caps;
       }
-      
+
       .title {
         width: 100%;
         font-size: 50px;
         margin: 0px;
         background-color: rgb(190, 191, 191);
       }
-      
+
       img {
         width: 250px;
       }
+
+      .back {
+        text-align: left;
+      }
+
       .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-  
-  .gallery > div {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  @media (max-width: 400px) {
-    .gallery {
-       grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .gallery {
-       grid-template-columns: 1fr;
-    }
-  }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .gallery>div {
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media (max-width: 400px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:active {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <div class="title">
+      <div class="back">
+        <a href="https://takaramarina.github.io/clickmap/">←</a>
+      </div>
       Gifu Prefecture
     </div>
     <div class="small">
-    <section class="gallery">
-      <div>
-      <a href="https://www.ippodogallery.com/artists/51-kai-tsujimura/works/58-ceramic/131-ceramic-kai-tsujimura/3695-kai-tsujimura-oribe-tea-bowl/">
-       <img src="mino.png" alt="Minoyaki">Minoyaki</a></div>
-      <div><a href="https://www.ippodogallery.com/exhibitions/56/works/artworks-8992-kodai-ujiie-celadon-lacquer-tea-bowl/">
-         <img src="oribo.png" alt="Oribe">Oribe</a></div>
-      <div><a href="https://www.ippodogallery.com/content/feature/596/artworks-7650-yui-tsujimura-white-shino-tea-bowl/">
-         <img src="shino.png" alt="Shino">Shinoyaki</a></div>
-    </section> </div>
+      <section class="gallery">
+        <div>
+          <a href="https://www.ippodogallery.com/artists/51-kai-tsujimura/works/58-ceramic/131-ceramic-kai-tsujimura/3695-kai-tsujimura-oribe-tea-bowl/">
+            <img src="mino.png" alt="Minoyaki">Minoyaki</a></div>
+        <div><a href="https://www.ippodogallery.com/exhibitions/56/works/artworks-8992-kodai-ujiie-celadon-lacquer-tea-bowl/">
+            <img src="oribo.png" alt="Oribe">Oribe</a></div>
+        <div><a href="https://www.ippodogallery.com/content/feature/596/artworks-7650-yui-tsujimura-white-shino-tea-bowl/">
+            <img src="shino.png" alt="Shino">Shinoyaki</a></div>
+      </section>
+    </div>
   </body>
 </html>
