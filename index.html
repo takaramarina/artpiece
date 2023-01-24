@@ -29,19 +29,43 @@
       img {
         width: 250px;
       }
+      .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .gallery > div {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 200px) {
+    .gallery {
+       grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 100px) {
+    .gallery {
+       grid-template-columns: 1fr;
+    }
+  }
     </style>
   </head>
   <body>
     <div class="title">
       Gifu Prefecture
     </div>
-    <div class="small"> <br>
+    <div class="small">
+    <section class="gallery">
+      <div>
       <a href="https://www.ippodogallery.com/artists/51-kai-tsujimura/works/58-ceramic/131-ceramic-kai-tsujimura/3695-kai-tsujimura-oribe-tea-bowl/">
-      Minoyaki <img src="mino.png" alt="Minoyaki"></a>
-      <a href="https://www.ippodogallery.com/exhibitions/56/works/artworks-8992-kodai-ujiie-celadon-lacquer-tea-bowl/">
-        <br> Oribe <img src="oribo.png" alt="Oribe"></a>
-      <a href="https://www.ippodogallery.com/content/feature/596/artworks-7650-yui-tsujimura-white-shino-tea-bowl/">
-        <br> Shinoyaki <img src="shino.png" alt="Shino"></a>
-    </div>
+      Minoyaki <img src="mino.png" alt="Minoyaki"></a></div>
+      <div><a href="https://www.ippodogallery.com/exhibitions/56/works/artworks-8992-kodai-ujiie-celadon-lacquer-tea-bowl/">
+        Oribe <img src="oribo.png" alt="Oribe"></a></div>
+      <div><a href="https://www.ippodogallery.com/content/feature/596/artworks-7650-yui-tsujimura-white-shino-tea-bowl/">
+        Shinoyaki <img src="shino.png" alt="Shino"></a></div>
+    </section> </div>
   </body>
 </html>
